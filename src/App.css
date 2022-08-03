@@ -117,4 +117,24 @@ nav {
   background-color:rgb(76 102 146 / 1);
   padding: 5px;
   margin:0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-circle {
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+}
+
+.loading-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.loading-page p {
+  text-align: center;
+  margin-left: 20%;
 }

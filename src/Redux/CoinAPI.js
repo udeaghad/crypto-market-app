@@ -8,19 +8,18 @@ const baseUrl = 'https://api.coinstats.app/public/v1';
 
 const getAllCoins = createAsyncThunk(
   GET_ALL_COINS,
-  async () => {
-    const request = new Request(`${baseUrl}/coins?skip=0&limit=10&currency=USD`);
+  async (cur) => {
+    const request = new Request(`${baseUrl}/coins?skip=0&limit=10&currency=${cur}`);
     const response = await fetch(request);
     const result = await response.json();
-   
-    return result.coins
+    console.log(cur)
+    return {coin:result.coins, currency:cur}
   }
 )
 
 const getCoinMarkets = createAsyncThunk(
   GET_COIN_MARKETS,
   async (coinId) => { 
-    console.log(coinId) 
     const request = new Request(`${baseUrl}/markets?coinId=${coinId}`);
     const response = await fetch(request);
     const result = await response.json();
@@ -30,7 +29,7 @@ const getCoinMarkets = createAsyncThunk(
     for (let i =0; i < 10; i+=1){
       markets.push({...result[i], id:i+1})
     }
-   console.log(markets)
+   
     return ({market: markets, coin_id: coinId})
     
   }

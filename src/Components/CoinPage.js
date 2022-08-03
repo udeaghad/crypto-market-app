@@ -16,8 +16,9 @@ const CoinPage = () =>{
   const exchangeMarket = coinExchange.market
   const coinExchangeId = coinExchange.coin_id
  
- 
-  const coinDetails = useSelector(state => state.cryptoCoins)
+  const getCoinDetails = useSelector(state => state.cryptoCoins)
+  const coinDetails = getCoinDetails.coin;
+  const currency = getCoinDetails.currency
 
   const newDetail = coinDetails.filter(item => item.id === coinExchangeId)
  
@@ -41,7 +42,7 @@ const CoinPage = () =>{
       </div>
       <div className='coin-name-price'>
       <h2 className='coin-pg-name'>{newDetail[0].name}</h2>
-      <div className='coin-pg-price'>{newDetail[0].price.toLocaleString("en-US", {style:"currency", currency:"USD"})}</div>
+      <div className='coin-pg-price'>{newDetail[0].price.toLocaleString("en-US", {style:"currency", currency: currency})}</div>
       </div>
       </div>:
       <div>Loading...</div>}

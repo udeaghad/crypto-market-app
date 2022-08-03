@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700;800&family=Roboto+Slab:wght@300;400;700&display=swap');
 .App {
   text-align: center;
 }
@@ -6,4 +7,111 @@
   height: 40px;
   /* width: 20px; */
   border: 1px solid black;
+}
+
+nav {
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ /* margin-top: 10px; */
+ background-color: rgb(76 102 181 / 1);
+
+}
+
+.heading {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  margin-left: 36%;
+  color: white;
+}
+
+.nav-icon {
+  display: flex;
+  margin-left: 20%; 
+}
+
+.pg-head {
+  display: flex;
+}
+
+.crypto-pix {
+  width: 50%;
+  z-index: -1;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.crypto-x {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.head-desr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: rgb(99 122 212 / 82%);
+}
+
+.list-coins {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.unit-coin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(59, 92, 194); 
+  padding: 5px;
+  background-color:rgb(76 102 181 / 1);
+  z-index: 1;
+}
+
+.arrow-icon {
+  align-self: flex-end;
+}
+
+.crypto-coin {
+  width: 40%;
+  align-self: flex-start;
+  z-index: -1;
+}
+
+.coin-name{
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  align-self: flex-end;
+  color: white;
+}
+
+.coin-price{
+  align-self: flex-end;
+  font-size: 14px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pg-container {
+  background-color: rgb(0 62 250 / 55%);
+  position: absolute;
+}
+
+.coin-heading h4{
+  margin: 0;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+.coin-heading {
+  background-color:rgb(76 102 146 / 1);
+  padding: 5px;
+  margin:0;
 }

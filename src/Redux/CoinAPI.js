@@ -19,7 +19,8 @@ const getAllCoins = createAsyncThunk(
 
 const getCoinMarkets = createAsyncThunk(
   GET_COIN_MARKETS,
-  async (coinId) => {  
+  async (coinId) => { 
+    console.log(coinId) 
     const request = new Request(`${baseUrl}/markets?coinId=${coinId}`);
     const response = await fetch(request);
     const result = await response.json();

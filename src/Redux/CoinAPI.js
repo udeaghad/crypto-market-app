@@ -30,7 +30,7 @@ const getCoinMarkets = createAsyncThunk(
     for (let i =0; i < 10; i+=1){
       markets.push({...result[i], id:i+1})
     }
-   
+   console.log(markets)
     return ({market: markets, coin_id: coinId})
     
   }

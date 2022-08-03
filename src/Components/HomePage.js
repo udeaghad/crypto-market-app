@@ -52,8 +52,10 @@ const dispatch = useDispatch();
         </div>
       <div className='list-coins' >
      
-        {coins.map((unitCoin) => (
-          <div key={unitCoin.id} className='unit-coin'>
+        {coins.map((unitCoin, i) => (
+          <div key={unitCoin.id} className='unit-coin'  
+          style={{ backgroundColor: i=== 1 || i===2 || i===5 || i===6 ||i===9 ? 'rgb(76 102 146 / 1)' : null }}
+          >
            <NavLink to='details' onClick={(e) => handleClick(e)} className='arrow-icon'>
            <div>
             <BsArrowRightCircle id={unitCoin.id} style={{width:'20px', height:'20px',color:'white'}}/>
@@ -72,9 +74,6 @@ const dispatch = useDispatch();
       </div>
       </div>
       </div>
-     
-  
-    
   )
 }
 

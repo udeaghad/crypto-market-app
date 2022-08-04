@@ -5,8 +5,7 @@ import {  NavLink } from "react-router-dom";
 import { MdSettings } from "react-icons/md";
 import { FaMicrophone } from "react-icons/fa";
 import { BsArrowRightCircle } from "react-icons/bs";
-
-import cryptoPix from './images/crypto-pix.jpg'
+import cryptoPix from './images/crypto-pix.jpg';
 
 
 
@@ -15,10 +14,8 @@ const getList =  useSelector((state) => state.cryptoCoins);
 
 const coins = getList.coin;
 const currency = getList.currency
-console.log(currency)
 
 const dispatch = useDispatch();
-
 
 const cur = 'USD';
 
@@ -29,20 +26,16 @@ const cur = 'USD';
   }, []);
   
   const  onSelect = (e) => {  
-    dispatch(getAllCoins(e.target.value));  
-             
+    dispatch(getAllCoins(e.target.value));              
 }
 
-
-  const handleClick = (e) =>{ 
-    console.log(e.target)   
+  const handleClick = (e) =>{       
       dispatch(getCoinMarkets(e.target.id))    
   }
 
 
   return (    
-        <div className='pg-container'>
-          <div className='bg-color'>
+        <div className='pg-container'>          
         <nav>
           <p className='heading'>Top Cryptos</p>
           <div className='nav-icon'> 
@@ -80,7 +73,9 @@ const cur = 'USD';
      
         {coins? coins.map((unitCoin, i) => (
           <div key={unitCoin.id} className='unit-coin'  
-          style={{ backgroundColor: i=== 1 || i===2 || i===5 || i===6 ||i===9 ? 'rgb(76 102 146 / 1)' : null }}
+          style={
+            { backgroundColor: i=== 1 || i===2 || i===5 || i===6 ||i===9 ? 'rgb(76 102 146 / 1)' : null }
+          }
           >
            <NavLink to='details' onClick={(e) => handleClick(e)} className='arrow-icon'>
            <div  >
@@ -90,7 +85,9 @@ const cur = 'USD';
             
             <img src={unitCoin.icon} alt='crypto-coin' className='crypto-coin'></img>
             <div className='coin-name'>{unitCoin.name}</div>
-            <div className='coin-price'>{unitCoin.price.toLocaleString("en-US", {style:"currency", currency:currency})}</div>           
+            <div className='coin-price'>
+              {unitCoin.price.toLocaleString("en-US", {style:"currency", currency:currency})}
+            </div>           
            </div>
           
         )):
@@ -101,7 +98,7 @@ const cur = 'USD';
      
       </div>
       </div>
-      </div>
+      
   )
 }
 

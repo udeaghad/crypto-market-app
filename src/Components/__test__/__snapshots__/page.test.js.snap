@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`To take snapshot of all components To Test CoinPage component if renders successfully! 1`] = `
+<div
+  className="pg-container"
+>
+  <div
+    className="coin-head-pg"
+  >
+    <div
+      className="coin-photo"
+    >
+      <img
+        alt=""
+        className="icon-pix"
+      />
+    </div>
+    <div
+      className="coin-name-price"
+    >
+      <h2
+        className="coin-pg-name"
+      >
+        bitcoin
+      </h2>
+      <div
+        className="coin-pg-price"
+      >
+        $0.00
+      </div>
+    </div>
+  </div>
+  <div
+    className="breakdown-label"
+  >
+    <h4>
+      Exchange Breakdown
+    </h4>
+  </div>
+  <div
+    className="coin-pg-exchange"
+  >
+    <p>
+      Loading...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`To take snapshot of all components To Test HomePage component if renders successfully! 1`] = `
+<div
+  className="pg-container"
+>
+  <nav>
+    <p
+      className="heading"
+    >
+      Top Cryptos
+    </p>
+    <div
+      className="nav-icon"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": "white",
+            "marginRight": "2rem",
+          }
+        }
+        viewBox="0 0 352 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M176 352c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96zm160-160h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16z"
+        />
+      </svg>
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.488.488 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"
+        />
+      </svg>
+    </div>
+  </nav>
+  <div
+    className="pg-head"
+  >
+    <div
+      className="crypto-pix"
+    >
+      <img
+        alt="crpto-image"
+        className="image"
+        src="crypto-pix.jpg"
+      />
+    </div>
+    <div
+      className="head-desr"
+    >
+      <h1
+        className="crypto-x"
+      >
+        CRYPTO EXCHANGE
+      </h1>
+    </div>
+  </div>
+  <div
+    className="coin-heading"
+  >
+    <h4>
+      Price Per Coin
+    </h4>
+    <select
+      className="currency-name"
+      name="currency"
+      onChange={[Function]}
+      type="text"
+    >
+      <option
+        value="Choose"
+      >
+        Choose Currency
+      </option>
+      <option
+        value="USD"
+      >
+        USD - US Dollars
+      </option>
+      <option
+        value="EUR"
+      >
+        EUR - EURO
+      </option>
+      <option
+        value="GBP"
+      >
+        GBP - British Pounds
+      </option>
+      <option
+        value="CAD"
+      >
+        CAD - Canadian Dollars
+      </option>
+      <option
+        value="AUD"
+      >
+        AUD - Australian Dollars
+      </option>
+    </select>
+  </div>
+  <div
+    className="list-coins"
+  >
+    <div
+      className="loading-page"
+    >
+      <p>
+        Loading...wait for some seconds
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -12,7 +12,7 @@ const getAllCoins = createAsyncThunk(
     const request = new Request(`${baseUrl}/coins?skip=0&limit=10&currency=${cur}`);
     const response = await fetch(request);
     const result = await response.json();
-    console.log(cur)
+   
     return {coin:result.coins, currency:cur}
   }
 )

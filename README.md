@@ -17,7 +17,7 @@ The styling was done to match the style created by Nelson Sakwa on Behance.
 
 ## Live Demo
 
-
+[Click to see Live Demo](https://crypto-exchange-market.netlify.app/)
 
 ## Getting Started
 

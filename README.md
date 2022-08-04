@@ -2,9 +2,11 @@
 
 # Cryptocurrency Exchange App
 
->This React capstone project is about building a mobile web application to check a list of metrics (numeric values) that I created using of React and Redux. I selected an API that provides numeric data about a cryptocurrencies exchange and then build the webapp around it. 
+>This React capstone project is about building a mobile web application to check a list of metrics (numeric values) which I created using React and Redux. I selected an API that provides numeric data about cryptocurrency exchange and then build the webapp around it. 
 
-The app was built using React documentation, React components, React props, React Router, connecting React and Redux, and handling events in a React app. Integration tests was written with a React testing library. The project also used styles in a React app, React life cycle methods, store, actions and reducers in React.
+The app was built using React documentation, React components, React props, React Router, connecting React and Redux, and handling events in a React app. Integration tests was written with a React testing library. The project also used React life cycle methods, store, actions and reducers.
+
+The styling was done to match the style created by Nelson Sakwa on Behance.
 
 ## Built With
 
@@ -56,4 +58,12 @@ Feel free to check the [issues page](https://github.com/udeaghad/crypto-market-a
 ## Show your support
 
 Give a [⭐️](https://github.com/udeaghad/crypto-market-app/stargazers) if you like this project!
+
+## Acknowledgments
+- Microverse Team
+- My Family
+- Nelson Sakwa of Behance.
+
+## 📝 License
+This project is MIT licensed.
 

@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700;800&family=Roboto+Slab:wght@300;400;700&display=swap');
+
 .App {
   text-align: center;
 }
 
 .item {
   height: 40px;
+
   /* width: 20px; */
   border: 1px solid black;
 }
 
 nav {
   display: flex;
- justify-content: center;
- align-items: center;
- /* margin-top: 10px; */
- background-color: rgb(76 102 181 / 1);
- padding: 0 10px;
+  justify-content: center;
+  align-items: center;
 
+  /* margin-top: 10px; */
+  background-color: rgb(76 102 181 / 1);
+  padding: 0 10px;
 }
 
 .heading {
@@ -29,7 +31,7 @@ nav {
 
 .nav-icon {
   display: flex;
-  margin-left: 20%; 
+  margin-left: 20%;
 }
 
 .pg-head {
@@ -53,7 +55,7 @@ nav {
   color: whitesmoke;
 }
 
-.head-desr{
+.head-desr {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,9 +73,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(59, 92, 194); 
+  border: 1px solid rgb(59, 92, 194);
   padding: 5px;
-  background-color:rgb(76 102 181 / 1);
+  background-color: rgb(76 102 181 / 1);
   z-index: 1;
 }
 
@@ -87,14 +89,14 @@ nav {
   z-index: -1;
 }
 
-.coin-name{
+.coin-name {
   font-family: 'Lato', sans-serif;
   font-size: 24px;
   align-self: flex-end;
   color: whitesmoke;
 }
 
-.coin-price{
+.coin-price {
   align-self: flex-end;
   font-size: 14px;
   color: whitesmoke;
@@ -107,16 +109,17 @@ nav {
   width: 100%;
 }
 
-.coin-heading h4{
+.coin-heading h4 {
   margin: 0;
   color: whitesmoke;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
 }
+
 .coin-heading {
-  background-color:rgb(76 102 146 / 1);
+  background-color: rgb(76 102 146 / 1);
   padding: 5px;
-  margin:0;
+  margin: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -130,6 +133,7 @@ nav {
   width: 100%;
   height: 100vh;
   display: flex;
+
   /* align-items: center; */
   justify-content: center;
 }

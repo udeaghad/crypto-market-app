@@ -1,26 +1,22 @@
-
-const cryptoMarket = []
+const cryptoMarket = [];
 
 const getMarketReducer = (state = cryptoMarket, action) => {
-  switch(action.type) {
-    case 'GET_COIN_MARKETS/fulfilled':      
-      return action.payload
-      default:
-        return state
+  switch (action.type) {
+    case 'GET_COIN_MARKETS/fulfilled':
+      return action.payload;
+    default:
+      return state;
   }
-}
-const cryptoCoins = []
+};
+const cryptoCoins = [];
 
 const getCoinsReducer = (state = cryptoCoins, action) => {
-  switch(action.type){
+  switch (action.type) {
     case 'GET_ALL_COINS/fulfilled':
-      return action.payload
-      default:
-        return state
+      return action.payload;
+    default:
+      return state;
   }
- 
-}
+};
 
-
-
-export {getMarketReducer, getCoinsReducer}
+export { getMarketReducer, getCoinsReducer };

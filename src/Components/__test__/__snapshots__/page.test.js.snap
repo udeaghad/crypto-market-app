@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`To take snapshot of all components To Test CoinPage component if renders successfully! 1`] = `
+exports[`To take snapshot of all components To Test CoinDetailRender component if renders successfully! 1`] = `
 <div
   className="pg-container"
 >
@@ -128,46 +128,78 @@ exports[`To take snapshot of all components To Test HomePage component if render
   <div
     className="coin-heading"
   >
-    <h4>
-      Price Per Coin
-    </h4>
-    <select
-      className="currency-name"
-      name="currency"
-      onChange={[Function]}
-      type="text"
+    <div>
+      <h4>
+        Price Per Coin
+      </h4>
+    </div>
+    <div
+      className="search-row"
     >
-      <option
-        value="Choose"
+      <select
+        className="currency-name"
+        name="currency"
+        onChange={[Function]}
+        type="text"
       >
-        Choose Currency
-      </option>
-      <option
-        value="USD"
+        <option
+          value="USD"
+        >
+          Choose Currency
+        </option>
+        <option
+          value="USD"
+        >
+          USD - US Dollars
+        </option>
+        <option
+          value="EUR"
+        >
+          EUR - EURO
+        </option>
+        <option
+          value="GBP"
+        >
+          GBP - British Pounds
+        </option>
+        <option
+          value="CAD"
+        >
+          CAD - Canadian Dollars
+        </option>
+        <option
+          value="AUD"
+        >
+          AUD - Australian Dollars
+        </option>
+      </select>
+      <form
+        onSubmit={[Function]}
       >
-        USD - US Dollars
-      </option>
-      <option
-        value="EUR"
-      >
-        EUR - EURO
-      </option>
-      <option
-        value="GBP"
-      >
-        GBP - British Pounds
-      </option>
-      <option
-        value="CAD"
-      >
-        CAD - Canadian Dollars
-      </option>
-      <option
-        value="AUD"
-      >
-        AUD - Australian Dollars
-      </option>
-    </select>
+        <input
+          className="search-field"
+          max="50"
+          name="search"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Search Top Rank"
+          type="number"
+        />
+        <button
+          className="filter-btn"
+          type="submit"
+        >
+          Filter
+        </button>
+        <button
+          className="clear-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          Clear
+        </button>
+      </form>
+    </div>
   </div>
   <div
     className="list-coins"

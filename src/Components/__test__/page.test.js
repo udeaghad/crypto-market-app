@@ -5,7 +5,7 @@ import store from '../../Redux/ConfigureStore';
 import HomePage from '../HomePage';
 import CoinDetailsRender from '../CoinDetailsRender';
 import { getCoinsReducer } from '../../Redux/CoinReducer';
-import { searchByRank } from '../../Redux/CoinAPI';
+import { searchByRank, searchBycrypto } from '../../Redux/CoinAPI';
 
 describe('To take snapshot of all components', () => {
   test('To Test HomePage component if renders successfully!', () => {
@@ -54,6 +54,42 @@ describe('To take snapshot of all components', () => {
           {
             id: 'ethereum', name: 'Ethereum', rank: 2, price: 1800,
           },
+          {
+            id: 'tether', name: 'Tether', rank: 3, price: 1,
+          },
+        ],
+        currency: 'USD',
+      },
+
+    );
+  });
+
+  test('To test the search function of the reducer', () => {
+    const state = {
+      coin: [
+        {
+          id: 'binance', name: 'Bitcoin', rank: 1, price: 23000,
+        },
+        {
+          id: 'ethereum', name: 'Ethereum', rank: 2, price: 1800,
+        },
+        {
+          id: 'tether', name: 'Tether', rank: 3, price: 1,
+        },
+        {
+          id: 'bnb', name: 'BNB', rank: 4, price: 307,
+        },
+        {
+          id: 'usd_coin', name: 'USD Coin', rank: 5, price: 0.8,
+        },
+      ],
+      currency: 'USD',
+
+    };
+
+    expect(getCoinsReducer(state, searchBycrypto('tether'))).toEqual(
+      {
+        coin: [
           {
             id: 'tether', name: 'Tether', rank: 3, price: 1,
           },

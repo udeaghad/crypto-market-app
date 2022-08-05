@@ -3,6 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 const GET_ALL_COINS = 'GET_ALL_COINS';
 const GET_COIN_MARKETS = 'GET_COIN_MARKETS';
 const GET_BY_RANK = 'GET_BY_RANK';
+const SEARCH_A_COIN = 'SEARCH_A_COIN';
 
 const baseUrl = 'https://api.coinstats.app/public/v1';
 
@@ -37,4 +38,11 @@ const searchByRank = (payload) => ({
   payload,
 });
 
-export { getAllCoins, getCoinMarkets, searchByRank };
+const searchBycrypto = (payload) => ({
+  type: SEARCH_A_COIN,
+  payload,
+});
+
+export {
+  getAllCoins, getCoinMarkets, searchByRank, searchBycrypto,
+};

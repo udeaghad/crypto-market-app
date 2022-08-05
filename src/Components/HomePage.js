@@ -4,7 +4,9 @@ import { NavLink } from 'react-router-dom';
 import { MdSettings } from 'react-icons/md';
 import { FaMicrophone } from 'react-icons/fa';
 import { BsArrowRightCircle } from 'react-icons/bs';
-import { getAllCoins, getCoinMarkets, searchByRank } from '../Redux/CoinAPI';
+import {
+  getAllCoins, getCoinMarkets, searchByRank, searchBycrypto,
+} from '../Redux/CoinAPI';
 import cryptoPix from './images/crypto-pix.jpg';
 
 const HomePage = () => {
@@ -59,6 +61,21 @@ const HomePage = () => {
     dispatch(getCoinMarkets(e.target.id));
   };
 
+  let searchCurrency = '';
+
+  const getSerachValue = (e) => {
+    searchCurrency = e.target.value;
+  };
+
+  const onSearchCurrency = (e) => {
+    e.preventDefault();
+    if (searchCurrency) {
+      dispatch(searchBycrypto(searchCurrency));
+    } else if (!searchCurrency) {
+      dispatch(getAllCoins(cur));
+    }
+  };
+
   return (
     <div className="pg-container">
       <nav>
@@ -81,6 +98,19 @@ const HomePage = () => {
       <div className="coin-heading">
         <div>
           <h4>Price Per Coin</h4>
+
+          {/* <form onSubmit={(e) => onSearchCurrency(e)}>
+            <input
+              name="search"
+              type="text"
+              className="search-field"
+              placeholder="Search By Currency"
+              onChange={(e)=> getSerachValue(e)}
+              onKeyDown={(e) => onBackspace(e)}
+            />
+            <button className="filter-btn" type="submit">Search</button>
+            <button className="clear-btn" type="button" onClick={(e) => onClear(e)}>Clear</button>
+          </form> */}
         </div>
 
         <div className="search-row">
@@ -98,6 +128,19 @@ const HomePage = () => {
             <option value="CAD">CAD - Canadian Dollars</option>
             <option value="AUD">AUD - Australian Dollars</option>
           </select>
+
+          <form onSubmit={(e) => onSearchCurrency(e)}>
+            <input
+              name="search"
+              type="text"
+              className="search-field"
+              placeholder="Search CryptoCoin"
+              onChange={(e) => getSerachValue(e)}
+              onKeyDown={(e) => onBackspace(e)}
+            />
+            <button className="filter-btn" type="submit">Search</button>
+            <button className="clear-btn" type="button" onClick={(e) => onClear(e)}>Clear</button>
+          </form>
 
           <form onSubmit={(e) => onSearch(e)}>
             <input

@@ -1,6 +1,9 @@
 const cryptoMarket = [];
 
 let newState;
+let newCurrencySearch;
+let newItem;
+let newAction;
 
 const getMarketReducer = (state = cryptoMarket, action) => {
   switch (action.type) {
@@ -22,6 +25,16 @@ const getCoinsReducer = (state = cryptoCoins, action) => {
         newState = state.coin.filter((item) => item.rank <= action.payload);
       }
       return { ...state, coin: newState };
+
+    case 'SEARCH_A_COIN':
+      if (action) {
+        newCurrencySearch = state.coin.filter((item) => {
+          newItem = item.name.toLowerCase();
+          newAction = action.payload.toLowerCase();
+          return newItem === newAction;
+        });
+      }
+      return { ...state, coin: newCurrencySearch };
 
     default:
       return state;

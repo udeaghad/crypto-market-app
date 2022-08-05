@@ -178,6 +178,31 @@ exports[`To take snapshot of all components To Test HomePage component if render
       >
         <input
           className="search-field"
+          name="search"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Search CryptoCoin"
+          type="text"
+        />
+        <button
+          className="filter-btn"
+          type="submit"
+        >
+          Search
+        </button>
+        <button
+          className="clear-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          Clear
+        </button>
+      </form>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          className="search-field"
           max="50"
           name="search"
           onChange={[Function]}

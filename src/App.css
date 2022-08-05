@@ -128,11 +128,11 @@ nav {
 
 .search-row {
   display: flex;
-  gap: 5%;
+  gap: 1%;
 }
 
 select {
-  width: 50%;
+  width: 56%;
   height: 60%;
   margin-top: 1%;
   color: rgb(76 102 146 / 1);

@@ -110,7 +110,7 @@ exports[`To take snapshot of all components To Test HomePage component if render
       className="crypto-pix"
     >
       <img
-        alt="crpto-image"
+        alt="currency"
         className="image"
         src="crypto-pix.jpg"
       />

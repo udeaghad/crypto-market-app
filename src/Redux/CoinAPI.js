@@ -2,17 +2,18 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const GET_ALL_COINS = 'GET_ALL_COINS';
 const GET_COIN_MARKETS = 'GET_COIN_MARKETS';
+const GET_BY_RANK = 'GET_BY_RANK'
 
 const baseUrl = 'https://api.coinstats.app/public/v1';
 
 const getAllCoins = createAsyncThunk(
   GET_ALL_COINS,
   async (cur) => {
-    const request = new Request(`${baseUrl}/coins?skip=0&limit=10&currency=${cur}`);
+    const request = new Request(`${baseUrl}/coins?skip=0&limit=50&currency=${cur}`);
     const response = await fetch(request);
     const result = await response.json();
-
     return { coin: result.coins, currency: cur };
+    
   },
 );
 
@@ -32,4 +33,9 @@ const getCoinMarkets = createAsyncThunk(
   },
 );
 
-export { getAllCoins, getCoinMarkets };
+const searchByRank = (payload) => ({
+  type: GET_BY_RANK,
+  payload
+})
+
+export { getAllCoins, getCoinMarkets, searchByRank };

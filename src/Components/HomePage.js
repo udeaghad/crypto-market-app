@@ -98,20 +98,7 @@ const HomePage = () => {
       <div className="coin-heading">
         <div>
           <h4>Price Per Coin</h4>
-
-          {/* <form onSubmit={(e) => onSearchCurrency(e)}>
-            <input
-              name="search"
-              type="text"
-              className="search-field"
-              placeholder="Search By Currency"
-              onChange={(e)=> getSerachValue(e)}
-              onKeyDown={(e) => onBackspace(e)}
-            />
-            <button className="filter-btn" type="submit">Search</button>
-            <button className="clear-btn" type="button" onClick={(e) => onClear(e)}>Clear</button>
-          </form> */}
-        </div>
+      </div>
 
         <div className="search-row">
 
@@ -122,7 +109,7 @@ const HomePage = () => {
             onChange={(e) => onSelect(e)}
           >
             <option value="USD">Choose Currency</option>
-            <option value="USD">USD - US Dollars</option>
+            <option value='USD'>USD - US Dollars</option>
             <option value="EUR">EUR - EURO</option>
             <option value="GBP">GBP - British Pounds</option>
             <option value="CAD">CAD - Canadian Dollars</option>

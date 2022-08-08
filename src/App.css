@@ -164,6 +164,7 @@ form {
   border-radius: 5px;
   color: whitesmoke;
   margin: 2px;
+  cursor: pointer;
 }
 
 .arrow-circle {
@@ -185,4 +186,54 @@ form {
 
 .price-rank {
   align-self: self-end;
+}
+
+@media screen and (min-width: 768px) {
+  .list-coins {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8%;
+    padding: 4% 4%;
+    background-color: rgb(76 102 146 / 1);
+  }
+
+  .unit-coin {
+    width: 25%;
+    margin-bottom: 5%;
+  }
+
+  .coin-heading h4 {
+    font-size: 26px;
+  }
+
+  .search-row {
+    height: 70px;
+  }
+
+  .search-field {
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .filter-btn,
+  .clear-btn {
+    height: 36px;
+    font-size: 18px;
+  }
+
+  select {
+    font-size: 20px;
+  }
+
+  .crypto-x {
+    font-size: 40px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .nav-icon {
+    margin-left: 32%;
+  }
 }

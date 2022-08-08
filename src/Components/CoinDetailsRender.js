@@ -51,18 +51,22 @@ const DetailsRender = () => {
               <div className="exchange-details">
                 <p>
                   Pair:
+                  {' '}
                   {coin.pair}
                 </p>
                 <p>
                   Pair Price:
+                  {' '}
                   {coin.pairPrice}
                 </p>
                 <p>
                   Price:
+                  {' '}
                   {coin.price}
                 </p>
                 <p>
                   Volume:
+                  {' '}
                   {coin.volume}
                 </p>
               </div>

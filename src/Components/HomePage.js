@@ -166,6 +166,7 @@ const HomePage = () => {
               </div>
               <div className="coin-rank">
                 Rank:
+                {' '}
                 {unitCoin.rank}
               </div>
             </div>

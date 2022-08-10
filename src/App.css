@@ -120,7 +120,6 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 16px 0px;
 }
 
 .search-row {
@@ -223,7 +222,7 @@ form {
   }
 
   .crypto-x {
-    font-size: 40px;
+    font-size: 34px;
   }
 
   .heading {

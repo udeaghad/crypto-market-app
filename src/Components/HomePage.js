@@ -85,17 +85,17 @@ const HomePage = () => {
           <MdSettings style={{ color: 'white' }} />
         </div>
       </nav>
-      <div className="pg-head">
-        <div className="crypto-pix">
+      <ul className="pg-head">
+        <li className="crypto-pix">
           <img className="image" src={cryptoPix} alt="currency" />
-        </div>
-        <div className="head-desr">
+        </li>
+        <li className="head-desr">
           <h1 className="crypto-x">CRYPTO EXCHANGE</h1>
-        </div>
+        </li>
 
-      </div>
+      </ul>
 
-      <div className="coin-heading">
+      <section className="coin-heading">
         <div>
           <h4>Price Per Coin</h4>
         </div>
@@ -143,8 +143,8 @@ const HomePage = () => {
             <button className="clear-btn" type="button" onClick={(e) => onClear(e)}>Clear</button>
           </form>
         </div>
-      </div>
-      <div className="list-coins">
+      </section>
+      <section className="list-coins">
 
         {coins ? coins.map((unitCoin) => (
 
@@ -159,16 +159,16 @@ const HomePage = () => {
             </NavLink>
 
             <img src={unitCoin.icon} alt="crypto-coin" className="crypto-coin" />
-            <div className="coin-name">{unitCoin.name}</div>
+            <p className="coin-name">{unitCoin.name}</p>
             <div className="price-rank">
-              <div className="coin-price">
+              <p className="coin-price">
                 {unitCoin.price.toLocaleString('en-US', { style: 'currency', currency })}
-              </div>
-              <div className="coin-rank">
+              </p>
+              <p className="coin-rank">
                 Rank:
                 {' '}
                 {unitCoin.rank}
-              </div>
+              </p>
             </div>
           </div>
 
@@ -179,7 +179,7 @@ const HomePage = () => {
             </div>
           )}
 
-      </div>
+      </section>
     </div>
 
   );

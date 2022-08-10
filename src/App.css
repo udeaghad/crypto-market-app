@@ -6,8 +6,6 @@
 
 .item {
   height: 40px;
-
-  /* width: 20px; */
   border: 1px solid black;
 }
 
@@ -15,10 +13,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* margin-top: 10px; */
   background-color: rgb(76 102 181 / 1);
-  padding: 0 10px;
+  padding: 10px 10px;
 }
 
 .heading {
@@ -124,6 +120,7 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  padding: 16px 0px;
 }
 
 .search-row {

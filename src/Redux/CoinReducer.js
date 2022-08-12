@@ -31,7 +31,7 @@ const getCoinsReducer = (state = cryptoCoins, action) => {
         newCurrencySearch = state.coin.filter((item) => {
           newItem = item.name.toLowerCase();
           newAction = action.payload.toLowerCase();
-          return newItem === newAction;
+          return newItem.match(newAction);
         });
       }
       return { ...state, coin: newCurrencySearch };

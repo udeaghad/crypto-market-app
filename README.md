@@ -4,7 +4,7 @@
 
 >This React capstone project is about building a mobile web application to check a list of metrics (numeric values) which I created using React and Redux. I selected an API that provides numeric data about cryptocurrency exchange and then build the webapp around it. 
 
-The app was built using React documentation, React components, React props, React Router, connecting React and Redux, and handling events in a React app. Integration tests was written with a React testing library. The project also used React life cycle methods, store, actions and reducers.
+The app was built using React documentation, React components, React props, React Router, connecting React and Redux, and handling events in a React app. Integration tests were written with a React testing library. The project also used React lifecycle methods, store, actions and reducers.
 
 The styling was done to match the style created by Nelson Sakwa on Behance.
 
